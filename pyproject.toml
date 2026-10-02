@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "myra-codex"
+version = "0.1.0"
+description = "A lightweight Codex-inspired local coding agent starter"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "myra-codex" }]
+license = { text = "MIT" }
+
+[project.scripts]
+myra-codex = "myra_codex.cli:main"
+
+[tool.setuptools]
+packages = ["myra_codex"]
